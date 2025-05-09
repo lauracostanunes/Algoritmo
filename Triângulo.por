@@ -10,8 +10,7 @@ programa {
     inteiro linha = tamanho - n
    enquanto (linha > 1) {
     escreva ("A")
-    linha --
-   }
+    linha -- }
    }
   }
 }
