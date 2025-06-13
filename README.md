@@ -10,6 +10,7 @@ O objetivo do curso é introduzir os conceitos fundamentais de lógica de progra
 - Operadores aritméticos e lógicos
 - Estruturas de decisão (condicionais)
 - Estruturas de repetição (laços)
+- Vetores (array)
 
 ## Ferramenta utilizada
 
