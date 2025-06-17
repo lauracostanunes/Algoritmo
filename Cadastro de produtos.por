@@ -62,7 +62,7 @@ programa
                         }
                         totalProdutos = totalProdutos + 1
                         escreva("Produto cadastrado com sucesso!\n")
-                        escreva("Deseja cadastrar outro produto? (1-sim / 0-não): ")
+                        escreva("Deseja cadastrar outro produto? (1: Sim / 0: Não): ")
                         inteiro continuar
                         leia(continuar)
                         se (continuar == 0)
@@ -74,15 +74,14 @@ programa
             }
             senao se (opcao == 2)
             {
-                escreva("\nCodigo   Descrição   Quantidade   Preço   Custo   Total Estoque   Preço Venda\n")
-                escreva("-----------------------------------------------------------------------------\n")
+                escreva("---------------------------------------------------------------------------------------------\n")
+                escreva("\n|   Código  |  Descrição    | Quantidade  | Preço Custo | Total Estoque | Preço Venda |\n")
+                escreva("---------------------------------------------------------------------------------------------\n")
                 inteiro i
-                para(i = 0; i < totalProdutos; i++)
-                {
-                    escreva(codigo[i], "\t", descricao[i], "\t\t", quantidade[i], "\t\t",
-                            precoCusto[i], "\t\t", totalEstoque[i], "\t\t", precoVenda[i], "\n")
+                para(i = 0; i < totalProdutos; i++) {
+                  escreva("\n|\t",codigo[i],"\t\t\t\t|",descricao[i],"\t\t\t|",quantidade[i],"\t\t\t\t\t\t| ",precoCusto[i],"\t\t\t\t| ",totalEstoque[i],"\t\t\t\t\t|", precoVenda[i],"\t\t\t\t\t|\n")
+                  escreva("---------------------------------------------------------------------------------------------\n")
                 }
-                escreva("\n")
             }
             senao se (opcao == 3)
             {
@@ -121,7 +120,7 @@ programa
             {
                 escreva("Opção inválida!\n")
             }
-            escreva("\nDeseja voltar ao menu? (1 - Sim / 0 - Não): ")
+            escreva("\nDeseja voltar ao menu? (1: Sim / 0: Não): ")
             leia(mostrarMenu)
             se (mostrarMenu == 0)
             {
