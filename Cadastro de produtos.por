@@ -74,7 +74,7 @@ programa
             }
             senao se (opcao == 2)
             {
-                escreva("\nCodigo   Descrição   Quantidade   Preço Custo   Total Estoque   Preço Venda\n")
+                escreva("\nCodigo   Descrição   Quantidade   Preço   Custo   Total Estoque   Preço Venda\n")
                 escreva("-----------------------------------------------------------------------------\n")
                 inteiro i
                 para(i = 0; i < totalProdutos; i++)
